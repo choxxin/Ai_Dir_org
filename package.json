@@ -1,0 +1,36 @@
+{
+  "name": "ose2",
+  "version": "1.0.0",
+  "description": "An Electron application for OSE2",
+  "author": "Your Name <your.email@example.com>",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "dependencies": {
+    "@electron-forge/cli": "^7.7.0",
+    "@google/generative-ai": "^0.24.0"
+  },
+  "devDependencies": {
+    "electron": "^35.0.2",
+    "electron-builder": "^24.9.1"
+  },
+  "build": {
+    "appId": "com.example.ose2",
+    "productName": "AI Directory Organizer",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": "nsis",
+      "icon": "meow.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true
+    }
+  }
+}
