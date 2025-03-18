@@ -17,7 +17,7 @@
 ## Screenshots
 
 ![Directory Organizer Screenshot](image.png)  
-_Example: Add a screenshot of your app here._
+_Example: Screenshot of the app._
 
 ---
 
