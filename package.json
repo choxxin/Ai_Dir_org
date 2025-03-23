@@ -6,11 +6,13 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "build": "electron-builder"
+    "build": "electron-builder",
+    "demojs": "node demo_py/watcher_ai_automate.js"
   },
   "dependencies": {
     "@electron-forge/cli": "^7.7.0",
-    "@google/generative-ai": "^0.24.0"
+    "@google/generative-ai": "^0.24.0",
+    "chokidar": "^4.0.3"
   },
   "devDependencies": {
     "electron": "^35.0.2",
