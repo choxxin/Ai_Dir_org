@@ -6,7 +6,7 @@
     <title>Directory Organizer</title> /* Title task */
     <style>
       /* General Reset */
-      /* CSS */
+      /* CSS - Cascading Style Sheet */
       * {
         
         margin: 0;
@@ -14,8 +14,9 @@
         box-sizing: border-box;
       }
 
-      /* Dark Theme */
+      /* Dark Theme code*/
       body {
+    
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         background-color: #1e1e1e; /* Dark background */
         color: #e0e0e0; /* Light text */
@@ -34,7 +35,7 @@
       }
 
       .container {
-        background: #1e1e1e; /* Match body background color */
+        background: #1e1e1e; /* Match body background color #1e1e1e */
         padding: 2rem;
         border-radius: 0; /* Remove border radius */
         box-shadow: none; /* Remove box shadow */
@@ -171,8 +172,9 @@
       <!-- Loader -->
       <div id="loader" class="loader" style="display: none"></div>
     </div>
-
+  <! -- Js -->
     <script>
+
       document
         .getElementById("selectDirectory")
         .addEventListener("click", async () => {
@@ -211,12 +213,12 @@
           } catch (error) {
             showAlert(`Error: ${error.message}`, "error");
           } finally {
-            // Hide loader
+            // Hide loader (NOT TO SHOW)
             document.getElementById("loader").style.display = "none";
           }
         });
-
-      function showAlert(message, type) {
+//Alert message
+      function showAlert(message, type) { 
         const alertMessage = document.getElementById("alertMessage");
         alertMessage.textContent = message;
         alertMessage.className = `alert ${type}`;
